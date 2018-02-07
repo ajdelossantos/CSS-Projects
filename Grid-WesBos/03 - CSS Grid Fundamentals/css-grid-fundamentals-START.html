@@ -22,11 +22,17 @@
     <div class="item">9</div>
     <div class="item">10</div>
   </div>
+
   <style>
     .container {
       display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: 200px 900px 150px;
+      /* A gutter */
+      grid-gap: 20px;
     }
   </style>
+
 </body>
 
 
