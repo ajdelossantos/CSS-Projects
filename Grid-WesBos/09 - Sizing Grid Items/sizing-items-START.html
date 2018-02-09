@@ -49,11 +49,16 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(5, 1fr);
+      /* fr = 'free space' */
     }
 
     .item9 {
-      background: navy;
-      width: 500px;
+      background: greenyellow;
+      /* Tells item to span across two columns */
+      /* note syntax */
+      grid-column: span 2;
+      grid-row: span 2;
+      /* if span is bigger, implicit rows/columns auto created */
     }
   </style>
 </body>
