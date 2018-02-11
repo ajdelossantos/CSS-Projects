@@ -14,6 +14,7 @@
     <div class="item item2">Item 02</div>
     <div class="item item3">Item 03</div>
     <div class="item item4">Item 04</div>
+    <!-- 
     <div class="item item5">Item 05</div>
     <div class="item item6">Item 06</div>
     <div class="item item7">Item 07</div>
@@ -30,6 +31,7 @@
     <div class="item item18">Item 18</div>
     <div class="item item19">Item 19</div>
     <div class="item item20">Item 20</div>
+     -->
   </div>
 
   <style>
@@ -37,6 +39,14 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
+      /* auto-fit - ends explicit grid at last item*/
+      /* grid-template-columns: repeat(auto-fit, 150px); */
+      /* auto-fill - adds extra columns, allows placing item to end */
+      grid-template-columns: repeat(auto-fill, 150px);
+    }
+
+    .item4 {
+      grid-column-end: -1;
     }
   </style>
 </body>
