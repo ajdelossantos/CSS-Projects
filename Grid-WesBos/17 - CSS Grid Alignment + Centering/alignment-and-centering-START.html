@@ -22,6 +22,7 @@
     <div class="itm itm10">10</div>
     <div class="itm itm11">11</div>
     <div class="itm itm12">12</div>
+    <!--     
     <div class="itm itm13">13</div>
     <div class="itm itm14">14</div>
     <div class="itm itm15">15</div>
@@ -50,6 +51,8 @@
     <div class="itm itm38">38</div>
     <div class="itm itm39">39</div>
     <div class="itm itm40">40</div>
+    -->
+
   </div>
 
   <style>
@@ -60,8 +63,8 @@
       justify-content:
       align-content:
 
+      justify-self: use on the actual child/item!
       align-self:
-      justify-self:
 
       justify-* is row axis
       align-* is column axis
@@ -69,8 +72,27 @@
 
     .container {
       display: grid;
+      border: 10px solid var(--yellow);
+      height: 500px;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(5, 120px);
+      grid-template-rows: repeat(5, 100px);
+      /* justify-items: center;
+      align-items: center; */
+      /* Shorthand */
+      place-items: stretch stretch;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+
+    .itm {
+      background: #fdfdfd;
+    }
+
+    .itm5 {
+      height: 50px;
+      justify-self: center;
+      align-self: end;
     }
   </style>
 </body>
