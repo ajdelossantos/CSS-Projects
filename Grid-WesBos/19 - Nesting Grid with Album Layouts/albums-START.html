@@ -97,6 +97,44 @@
 
 
   <style>
+    .albums {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .album {
+      position: relative;
+      padding: 20px;
+      border-radius: 2px;
+      background: hsla(0, 0%, 100%, .3);
+      overflow: hidden;
+      letter-spacing: 1px;
+      color: #fdfdfd;
+      font-weight: 100;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+      align-items: center;
+    }
+
+    .album::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      filter: blur(20px);
+      margin: -30px;
+      z-index: -1;
+    }
+
+    /* image height is 300px natively... */
+
+    .album__artwork {
+      width: 100%;
+    }
   </style>
 </body>
 
