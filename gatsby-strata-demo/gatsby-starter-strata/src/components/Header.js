@@ -12,6 +12,7 @@ class Header extends React.Component {
                     <h1><strong>Angelina Nwin</strong></h1> 
                     <h1>artist</h1>
                     <h1>yogi</h1>
+                    <h1>adventurer</h1>
                     <h1>expert in smiles</h1>
                 </div>
                 <Footer />
