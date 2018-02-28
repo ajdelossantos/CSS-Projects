@@ -92,7 +92,8 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>About me</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+                        <p>"Expressive. Uncompormising. Engaging. Characterized by lush colors and meticulous detail, each piece draws you into a poignant and occasionally stark narrative. Her work is intimate and whimsical: a refreshing perspective on cultivating identity and resonance as a woman on a mission in the San Francisco Bay Area."</p>
+                        <cite>&mdash;Alvin, totally not an art critic</cite>
                     </section>
 
                     <section id="two">
