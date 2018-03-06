@@ -175,11 +175,14 @@
       return Math.floor(Math.random() * limit) + 1;
     };
 
+    function handleClick(e) {
+      const src = e.currentTarget.querySelector("img").src;
+      console.log(src);
+    };
+
     const nestedArrays = Array.from({ length: 20 }, () =>
       [1, 1]
     );
-
-    console.log(nestedArrays);
 
     const digits = Array.from({ length: 50 }, () =>
       [randomNumber(4), randomNumber(4)].concat(nestedArrays)
@@ -188,6 +191,13 @@
     const html = digits.map(generateHTML).join('');
 
     gallery.innerHTML = html;
+
+    const items = document.querySelectorAll(".item")
+
+
+    items.forEach(item => (
+      item.addEventListener('click', handleClick)
+    ));
   </script>
 </body>
 
