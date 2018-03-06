@@ -21,12 +21,12 @@ import full05 from '../assets/images/fulls/canyon.jpg'
 import full06 from '../assets/images/fulls/mein-chick.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Cow Udder Jellies', description: 'August 17, 2016. Ink and watercolor on paper.'},
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Cow Udder Jellies', description: 'August 17, 2016. Ink and watercolor.'},
     { id: '2', src: full02, thumbnail: thumb02, caption: 'Infinity and Beyond', description: 'July 20, 2017. iPhone.'},
     { id: '3', src: full03, thumbnail: thumb03, caption: 'Junicorn Challenge 2017', description: 'June 14, 2017. Watercolor on paper.'},
     { id: '4', src: full04, thumbnail: thumb04, caption: 'Double Standard', description: 'May 30, 2017. Ink on Paper'},
     { id: '5', src: full05, thumbnail: thumb05, caption: 'Of Course', description: 'April 11, 2017. iPhone @Grand Canyon.'},
-    { id: '6', src: full06, thumbnail: thumb06, caption: 'Mein Chick, Not Your Side Bae', description: 'March 11, 2017. Ink et al on paper.'}
+    { id: '6', src: full06, thumbnail: thumb06, caption: 'Mein Chick, Not Your Side Bae', description: 'March 11, 2017. Ink on paper.'}
 ];
 
 class HomeIndex extends React.Component {
@@ -92,7 +92,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>About me</h2>
                         </header>
-                        <p>"Expressive. Uncompormising. Engaging. Characterized by lush colors and meticulous detail, each piece draws you into a poignant and occasionally stark narrative. Her work is intimate and whimsical: a refreshing perspective on cultivating identity and resonance as a woman on a mission in the San Francisco Bay Area."</p>
+                        <p>"Expressive. Uncompromising. Engaging. Characterized by lush colors and meticulous detail, each piece draws you into her poignant and occasionally stark narrative. Her work is intimate and whimsical: a refreshing perspective on cultivating identity and resonance as a woman on a mission in the San Francisco Bay Area."</p>
                         <cite>&mdash;Alvin, totally not an art critic</cite>
                     </section>
 
@@ -107,7 +107,7 @@ class HomeIndex extends React.Component {
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="https://www.instagram.com/angelina.nwin" className="button">Instagram</a></li>
                         </ul>
                     </section>
 
