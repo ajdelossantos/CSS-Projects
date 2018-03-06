@@ -90,8 +90,7 @@
     const overlayClose = overlay.querySelector('.close');
 
     function generateHTML([h, v]) {
-      return
-      `
+      return `
         <div class="item h${h} v${v}">
           <img src="images/${ randomNumber(12)}.jpg" />
           <div class="item__overlay">
@@ -105,6 +104,13 @@
       return Math.floor(Math.random() * limit) + 1;
     };
 
+    const digits = Array.from({ length: 50 }, () =>
+      [randomNumber(4), randomNumber(4)]
+    );
+
+    const html = digits.map(generateHTML).join('');
+
+    gallery.innerHTML = html;
   </script>
 </body>
 
