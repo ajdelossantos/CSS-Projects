@@ -13,7 +13,7 @@
   <div class="overlay">
     <div class="overlay-inner">
       <button class="close">× Close</button>
-      <img>
+      <img />
     </div>
   </div>
 
@@ -47,7 +47,7 @@
 
     .close {
       background: none;
-      color: white;
+      color: black;
       border: 0;
     }
 
@@ -139,9 +139,11 @@
 
     .overlay.open {
       display: grid;
+      align-items: center;
+      justify-content: center;
     }
 
-    .overlay figure {
+    .overlay-inner {
       background: white;
       width: 700px;
       padding: 20px;
@@ -177,8 +179,17 @@
 
     function handleClick(e) {
       const src = e.currentTarget.querySelector("img").src;
-      console.log(src);
+      overlayImage.src = src;
+      overlay.classList.add('open');
     };
+
+    function close() {
+      overlay.classList.remove('open');
+    }
+
+    const closeBtn = document.querySelector('.close')
+
+    closeBtn.addEventListener('click', close);
 
     const nestedArrays = Array.from({ length: 20 }, () =>
       [1, 1]
@@ -193,7 +204,6 @@
     gallery.innerHTML = html;
 
     const items = document.querySelectorAll(".item")
-
 
     items.forEach(item => (
       item.addEventListener('click', handleClick)
