@@ -12,3 +12,97 @@ img {
   max-width: 100%;
 }
 
+/* main */
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+
+/* top */
+.top {
+  display: grid;
+  grid-template-areas: 
+  "hero hero cta1"
+  "hero hero cta2";
+  grid-gap: 20px;
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url(images/taco.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.hero > * {
+  background: var(--yellow);
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.cta {
+  background-color: var(--yellow);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.cta p {
+  margin: 0;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.cta1 {
+  grid-area: cta1;
+}
+
+.cta2 {
+  grid-area: cta2;
+}
+
+/* menu */
+
+.menu {
+  display: grid;
+  
+}
+
+@media (max-width: 700px) {
+  /* top */
+
+  .top {
+    grid-template-areas: 
+    "hero hero"
+    "hero hero"
+    "cta1 cta2"
+  }
+
+  /* menu */
+}
+
+@media (max-width: 500px) {
+  /* top */
+
+  .top {
+    grid-template-areas: 
+    "hero"
+    "cta1"
+    "cta2"
+  }
+
+  /* menu */
+}
