@@ -1,0 +1,57 @@
+$color: blue
+
+// compiled before exported -> allows SASS within mixin
+// SASS is strictly typed!
+=cssProperties($color, $lineHeight)
+  #main
+    color: $color
+    background-color: green
+    line-height: $lineHeight
+
+// spread operator takes a list
+=boxShadow($shadow...)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  -o-box-shadow: $shadow
+  box-shadow: $shadow
+
+=border
+  border: 1px solid #888
+  border-radius: 2px
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+
+  @-moz-keyframes #{$name}
+    @content
+
+  @-o-keyframes #{$name}
+    @content
+
+  @keyframes #{$name}
+    @content
+
+// Exported code
+body
+  color: green
+  width: 200px
+
+  // Invocation now REQUIRES arguments specified in function def
+  +cssProperties($color, 2.6)
+
+  &__container
+    height: 200px
+    width: 900px
+
+    +border
+    +boxShadow(2px 2px 2px rgba(128, 128, 128, 0.8))
+
++keyframes(myAnim)
+  // content block here
+  // inserted where @content declared
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
