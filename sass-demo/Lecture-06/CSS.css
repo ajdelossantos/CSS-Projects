@@ -1,0 +1,32 @@
+/*
+#parent {
+  background-color: green;
+
+  #child-One, .classTwo, .classThree { // commas will append #parent
+    background-color: yellow;
+    font-size: 1em;
+  }
+
+  #child-Two {
+    font-weight: 200;
+
+    #inner-Child {
+      background-color: blue; 
+    }
+  }
+
+  &.hasClass #button{
+    background-color: blue;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+*/
+#parent .content .child, #parent .sign .child, #parent video .child, #parent img .child, #parent elOne .child, #parent elTwo .child, #parent elThree .child {
+  background-color: green;
+  font-size: 2em;
+}
+
+.content {
+  line-height: 2em;
+}

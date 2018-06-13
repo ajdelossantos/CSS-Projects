@@ -1,0 +1,46 @@
+$el: button; // no quotes!
+$list: elOne, elTwo, elThree;
+
+// Inherited Selectors
+
+/*
+#parent {
+  background-color: green;
+
+  #child-One, .classTwo, .classThree { // commas will append #parent
+    background-color: yellow;
+    font-size: 1em;
+  }
+
+  #child-Two {
+    font-weight: 200;
+
+    #inner-Child {
+      background-color: blue; 
+    }
+  }
+
+  &.hasClass ##{$el}{
+    background-color: blue;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+*/
+
+// Inherited Properties -- Good way to share props across elements
+
+// % denotes a placeholder
+#parent %shared .child {
+  background-color: green;
+  font-size: 2em;
+}
+
+.content {
+  @extend %shared;
+  line-height: 2em;
+}
+
+.sign, video, img, #{$list} {
+  @extend %shared;
+}
