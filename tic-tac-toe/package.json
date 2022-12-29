@@ -2,8 +2,8 @@
   "name": "tic-tac-toe",
   "description": "A collection of exercises for practicing CSS techniques. Topics include:",
   "devDependencies": {
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "version": "1.0.0",
   "main": "webpack.config.js",
